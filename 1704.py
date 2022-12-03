@@ -3,8 +3,8 @@
 
 class Solution:
     def halvesAreAlike(self, s: str) -> bool:
-        first_half = s[: int(len(s) / 2)]
-        second_half = s[int(len(s) / 2) :]
+        first_half = s[: len(s) // 2]
+        second_half = s[len(s) // 2 :]
         print(first_half, second_half)
         vowels = ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"]
         first_count = 0

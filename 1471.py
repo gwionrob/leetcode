@@ -6,7 +6,7 @@ class Solution:
         if len(set(arr)) <= 1:
             return [arr[0]] * k
         arr.sort()
-        middle_index = int((len(arr) - 1) / 2)
+        middle_index = len(arr) - 1 // 2
         median = arr[middle_index]
         strength = []
         for i in arr:
